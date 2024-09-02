@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-to-Text</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="logo">
+                <img src="/img/logo.svg" alt="logo">
+            </div>
+
+            <div class="main">
+                <section class="main-video-download">
+                    <p>Select language and download the video:</p>
+                    <div class="main-video-download-input">
+                        <select class="main-video-download-select" id="language-select">
+                        <option value="uk-UA">Ukrainian (Ukraine)</option>
+                        <option value="en-US">English (US)</option>
+                        <option value="es-ES">Spanish (Spain)</option>
+                        <option value="fr-FR">French (France)</option>
+                        </select>
+                        <img id="video-upload" style="cursor: pointer;" src="/img/download-file.svg" alt="">
+                        <!-- Приховане input-поле для файлів -->
+                        <input name="file"  type="file" id="file-input" style="display: none;" accept="video/*">
+                    </div>
+                    
+                    
+                    <video controls id="uploaded-video"></video>
+                    <!--  запуск процесу -->
+                    <button id="start-process" class="main-video-download-btn" style="padding-right: 32px; padding-left: 32px; margin-bottom: 10px;">Start Process</button>
+
+                    <!-- видалення даних -->
+                    <button id="delete-data" class="main-video-download-btn">Delete Data</button>
+                </section>
+
+                <section class="main-tetx-extrackt">
+                    <textarea name="" id="textarea" name="videoUrl" cols="30" rows="10">Your extracted text here</textarea>
+                    <button id="copy-button" class="main-tetx-extrackt-btn">Copy</button>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            
+            <div id="kontakts" class="footer-contact">
+                <h4>Contacts:</h4>
+                <div class="footer-contact-flex">
+                    <p><a href="mailto:info@zacker.com">Email: info@zacker.com</a></p>
+                    <p><a href="#">Num: +1234567890</a></p>
+                </div>
+                
+            </div>
+          
+            <div class="footer-social">
+                <h4>Social Media:</h4>
+                <ul>
+                    <li><a href="https://de-de.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com/?lang=uk">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+</body>
+</html>

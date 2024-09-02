@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono';
+    background-color: #025AC2;
+    
+}
+
+.wrapper{
+    max-height: fit-content;
+    margin: 100px auto;
+    max-width: fit-content;
+}
+
+.logo{
+    max-width: fit-content;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 80px auto;
+    width: 800px;
+}
+
+.main-video-download-btn, .main-tetx-extrackt-btn {
+    font-family: 'Roboto Mono';
+    border-radius: 10px;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #025AC2;
+    transition: .2s linear;
+    background: #FFD602;
+    display: block;
+    cursor: pointer;
+}
+
+.main-video-download-btn:hover, .main-tetx-extrackt-btn:hover {
+    box-shadow: 0 0 0 1px #025AC2, 0 0 0 3px #FFD602;
+}
+
+#uploaded-video{
+    width: 300px;
+    margin-bottom: 20px;
+    display: none; /* Приховати програвач до вибору відео */
+    border-radius: 20px;
+}
+
+.main-tetx-extrackt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-tetx-extrackt-btn{
+    width: 130px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.main-video-download-select{
+    width: 200px;
+}
+
+.main-video-download-input{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main-video-download-input input {
+    width: 250px;
+    height: 20px;
+    font-family: 'Roboto Mono';
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.main-video-download-input img{
+    width: 30px;
+    height: auto;
+    display: grid;
+    align-items: center;
+    margin-left: 10px;
+}
+.main-video-download p{
+    color: rgb(234, 234, 234);
+    font-size: 12px;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.main-video-download select{
+    width: 290px;
+    height: 30px;
+    font-family: 'Roboto Mono';
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    display: grid;
+    align-items: center;
+}
+
+.main-tetx-extrackt textarea{
+    resize: none;
+    font-family: 'Roboto Mono';
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 270px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    background-color: #025AC2; /* Фон футера */
+    padding: 50px 190px; /* Відступи */
+    height: 100px;
+    font-family: 'Roboto Mono';
+    font-size: 10px;
+}
+.footer p{
+    text-align: left;
+}
+footer h4{
+    text-align: left;
+    font-size: 12px;
+}
+
+.footer-container {
+    background-color: #f2f2f2;
+    border-radius: 77px;
+    height: 100px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    max-width: 100%; 
+    margin: auto;
+}
+
+.footer-contact,
+.footer-social{
+    padding: 0 50px;
+}
+
+.footer-contact{
+    margin-right: 200px;
+}
+.footer-contact-flex, .footer-social ul{
+    display: flex;
+}
+
+.footer-contact-flex p{
+    margin-right: 25px;
+    margin-top: 0;
+}
+.footer-social ul {
+    padding: 0;
+    list-style: none; 
+}
+
+.footer-social li {
+    margin-right: 15px; 
+    text-align: left;
+}
+.footer-social li, 
+.footer-contact p{
+    color: #454444;
+}
+.footer-social li a, 
+.footer-contact p a{
+    text-decoration: none;
+    color: #000000;
+}
+.footer-social li a:hover, 
+.footer-contact p a:hover{
+    color: #025AC2;
+}
+.footer-text{
+    color: #515151;
+    font-size: 14px;
+}
+
+
